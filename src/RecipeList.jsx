@@ -1,12 +1,14 @@
 import CakeForm from './CakeForm';
+import './App.css';
 const RecipeList = ({cakes, setCakes}) => {
     return (
         <>
-            <section>
+            <section className='cake-list'>
                 {
                     cakes.map((cake, index) => {
                         return(
-                            <div key={index}>
+                            <div className="cake-item" key={index}>
+                                <div className='cake-box'>
                                 <h3>{cake.cakeName}</h3>
                                 <ul>
                                     {cake.ingredients.map((ingredient, index) => {
@@ -15,6 +17,7 @@ const RecipeList = ({cakes, setCakes}) => {
                                         )
                                     })}
                                 </ul>
+                            </div>
                             </div>
                         )
                     })

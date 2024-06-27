@@ -103,7 +103,7 @@ li {
 }
 
 .cake-box {
-  background-color: #ffccbc; /* Light Orange */
+  background-color: #f3d5cc; /* Light Orange */
   padding: 15px;
   margin: 15px 0;
   border-radius: 8px;
@@ -121,9 +121,10 @@ li {
 }
 
 .cake-item {
-  flex: 1 1 calc(33% - 30px);
+  flex: 1 1 calc(10% - 15px);
   box-sizing: border-box;
-  margin: 15px;
+  margin: 10px;
+  color: rgb(64, 61, 61)
 }
 
 .error-message {
