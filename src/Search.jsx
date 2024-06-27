@@ -1,16 +1,16 @@
 import React, {useState} from 'react'; 
 //the search component
-const Search = (cakes, setCakes) => {
+const Search = ({cakes, setCakes}) => {
 
     const [searchCake, setSearchCake] = useState(''); 
     const filterCakes = (searchCake) => {
         console.log(searchCake); 
-        const filteredCakes = cakes.filter(cake => cake.cakeName.toLowerCase().includes(searchCake)); 
+        const filteredCakes = cakes.filter(cake => cake.cakeName.toLowerCase().includes(searchCake.toLowerCase())); 
         return filteredCakes; 
     }
 
     const handleSubmit = (e) => {
-        e.preventDefault;
+        e.preventDefault();
         const filteredCakes = filterCakes(searchCake); 
         setCakes(filteredCakes); 
 

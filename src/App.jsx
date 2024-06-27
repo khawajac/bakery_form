@@ -7,7 +7,7 @@ import React, { useState } from "react";
 import './App.css';
 
 function App() {
-  const [cakes, setCakes] = ([
+  const [cakes, setCakes] = useState([
     {
         cakeName: "Lemon Drizzle",
         ingredients: ["eggs", "butter", "lemon  zest", "sugar", "self-raising flour"],
