@@ -25,7 +25,7 @@ const RecipeList = ({cakes, setCakes}) => {
             </section>
             <section>
                 <h4>Average cake rating: </h4>
-                <p>{(cakes.reduce((total, cake) => total + cake.rating, 0) / cakes.length)}</p>
+                <p> {(cakes.reduce((total, cake) => total + cake.rating, 0) / cakes.length)}   🥐</p>
             </section>
         </>
     )
