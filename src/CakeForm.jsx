@@ -22,7 +22,7 @@ const CakeForm = ({cakes, setCakes}) => {
 
     return (
         <form onSubmit={handleSubmit}>
-            <p>{error}</p>
+            <p className="error-message">{error}</p>
             <label htmlFor="name" >Cake Name:</label>
             <input type="text" id="name" placeholder="Name" value={cakeName} onChange={(e) => setCakeName(e.target.value)}/>
             <label htmlFor="ingredients">Ingredients:</label>

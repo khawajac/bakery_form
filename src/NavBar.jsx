@@ -2,7 +2,7 @@ const NavBar = () => {
 
     return (
 
-        <nav>
+        <nav className="navbg-img">
             <ul>
                 <li>Home</li>
                 <li>Tasty Cakes</li>
