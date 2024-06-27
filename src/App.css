@@ -3,7 +3,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
+  background-color: #426d57; /* Light Forest Green */
   color: #333;
 }
 
@@ -17,7 +17,7 @@ header {
 
 nav {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   gap: 20px;
 }
 
@@ -93,10 +93,13 @@ ul {
 li {
   background-color: #fff;
   margin-bottom: 5px;
-  padding: 10px;
+  padding: 5px;
   border-radius: 4px;
   border: 1px solid #ddd;
   color: #4e342e; /* Brown */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .cake-box {

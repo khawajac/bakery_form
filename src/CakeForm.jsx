@@ -17,12 +17,8 @@ const CakeForm = ({cakes, setCakes}) => {
         setCakes([newCake, ... cakes]);
     };
 
-   
-
 
     //string.split gives an array 
-
-
 
     return (
         <form onSubmit={handleSubmit}>

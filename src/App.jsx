@@ -3,11 +3,11 @@ import Title from "./Title";
 import RecipeList from "./RecipeList";
 import Search from "./Search";
 import CakeForm from "./CakeForm";
-import React from "react";
+import React, { useState } from "react";
 import './App.css';
 
 function App() {
-  const [cakes, setCakes] = React.useState([
+  const [cakes, setCakes] = ([
     {
         cakeName: "Lemon Drizzle",
         ingredients: ["eggs", "butter", "lemon  zest", "sugar", "self-raising flour"],
@@ -29,6 +29,8 @@ function App() {
         rating: 5
     }
 ]); 
+
+
   return (
     <>
       <header>
@@ -37,7 +39,7 @@ function App() {
       </header>
       <main>
         <RecipeList cakes={cakes} setCakes={setCakes}/>
-        <Search/>
+        <Search cakes={cakes} setCakes={setCakes}/>
         <CakeForm cakes={cakes} setCakes={setCakes}/>
       </main>
     </>
