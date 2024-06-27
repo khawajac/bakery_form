@@ -3,8 +3,32 @@ import Title from "./Title";
 import RecipeList from "./RecipeList";
 import Search from "./Search";
 import CakeForm from "./CakeForm";
+import React from "react";
+import './App.css';
 
 function App() {
+  const [cakes, setCakes] = React.useState([
+    {
+        cakeName: "Lemon Drizzle",
+        ingredients: ["eggs", "butter", "lemon  zest", "sugar", "self-raising flour"],
+        rating: 5
+    },
+    {
+        cakeName: "Tea Loaf",
+        ingredients: ["eggs", "oil", "dried fruit", "sugar", "self-raising flour", "strong tea"],
+        rating: 3
+    },
+    {
+        cakeName: "Brownie",
+        ingredients: ["chocolate", "eggs", "flour", "butter", "walnuts"],
+        rating: 4
+    },
+    {
+        cakeName: "Carrot Cake",
+        ingredients: ["carrots", "walnuts", "oil", "cream cheese", "flour", "sugar"],
+        rating: 5
+    }
+]); 
   return (
     <>
       <header>
@@ -12,12 +36,12 @@ function App() {
         <Title />
       </header>
       <main>
-        <RecipeList />
-        <Search />
-        <CakeForm />
+        <RecipeList cakes={cakes} setCakes={setCakes}/>
+        <Search/>
+        <CakeForm cakes={cakes} setCakes={setCakes}/>
       </main>
     </>
   );
 }
 
-export default App;
+export default App
