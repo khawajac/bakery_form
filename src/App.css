@@ -125,7 +125,12 @@ li {
 }
 
 .cake-box h3 {
+  text-align: center;
   margin-top: 0;
+}
+
+.cake-box:hover {
+  background-color: #e4a28d;
 }
 
 .cake-list {
