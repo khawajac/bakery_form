@@ -1,4 +1,5 @@
 import React, {useState} from 'react'; 
+//the search component
 const Search = () => {
 
     return(
